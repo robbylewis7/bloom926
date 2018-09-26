@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bloom</title>
+    <link href="dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="sprout.png"/>
+
+  </head>
+  <body>
+
+           <header role="banner">
+		<h1><span class="logo">Bloom</span></h1>
+        <img src = "sproutlogo.png" id = "logo">
+
+		<div role="nav" class="nav">
+            <ul>
+                <li>
+                    <a href="/main.html" id = "home">Home</a>
+                </li>
+                <li>
+                    <a href="/all.html" >All Logs</a>
+                </li>
+                
+                <li>
+                    <a href="/dashboard.html" >Dashboard</a>
+                </li>
+            </ul>
+        <button type="button" class = "buttons" id = "logout">Logout</button>
+
+		</div>
+	</header>
+      
+<div id = "allCharts">
+<div>
+ <canvas id="myChart" class = "canvases"></canvas>
+</div>
+
+<div>
+ <canvas id="waterIntake" class = "canvases"></canvas>
+</div>
+    
+<div>
+ <canvas id="stress" class = "canvases"></canvas>
+</div>
+    
+<div>
+ <canvas id="energy" class = "canvases"></canvas>
+</div>
+
+<div>
+ <canvas id="exercise" class = "canvases"></canvas>
+</div>
+
+<div>
+ <canvas id="cleanEating" class = "canvases"></canvas>
+</div>
+    
+<div>
+ <canvas id="socialSupport" class = "canvases"></canvas>
+</div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
